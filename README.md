@@ -1,10 +1,22 @@
-Project Description: 
-The project will provide an effective platform for music lovers. Where they can create, organize and enjoy their playlist with features: such as search, shuffle and loop their songs etc.
+# 💿 Legacy Playlist Manager (Java)
+**A foundational exploration of Data Structures and Algorithms.**
 
-Concepts to be used:
-Linked list: They will be used to make the playlist where songs will be inserted and deleted.
-Sorting: A sorting algorithm will be used to sort the playlist by attributes such as: Song title, Artist, Duration of the song.
-Trees: Use of a Binary Search tree to efficiently locate a song within the playlist.
-Queue: to manage the order of playback. When a song is played, it is dequeued, and the next song is then queued up. 
-Stacks: Using stacks to provide an undo feature.
+This repository contains the legacy codebase for a console-based Music Playlist Management System. It served as the architectural foundation for the Software Re-engineering Project, **[Aurora Tunes](https://github.com/amna-mansoor/aurora-tunes)**, demonstrating the fundamental concepts of data organization and retrieval.
+
+### 🧩 Core Data Structures Implemented
+This project was designed to demonstrate the efficiency of classical DSA in a practical application:
+
+*   **Queue (FIFO):** Managed the ordered playback sequence of songs.
+*   **Stack (LIFO):** Powered the "Undo" functionality to remove the most recently added track.
+*   **AVL Tree:** Provided a self-balancing Binary Search Tree to enable $O(\log n)$ song searching.
+*   **Insertion Sort:** Implemented to maintain alphabetical ordering within the playlist.
+
+### ⚙️ Technical Highlights
+*   **Language:** Java
+*   **Persistence:** Utilized Java Serialization to save and load playlist states via binary `.obj` files.
+*   **Interface:** Terminal-driven menu system with sequential processing.
+*   **Architecture:** Monolithic design, demonstrating core object-oriented principles.
+
+### 🎓 Academic Context
+Developed as part of the Data Structures and Algorithms coursework, this project explores how to manage data efficiently without a database. While limited by its local-machine environment, it provided the essential blueprint for the algorithmic mapping (Queue to Firestore, AVL Tree to Spotify Search) used in my modern re-engineered platform.
 
